@@ -76,7 +76,7 @@
             android:id="@+id/pressure"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Pressão: 1013 hPa"
+            android:text="@string/weather_pressure_hpa"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/tv_weather_name"
             app:layout_constraintStart_toStartOf="@id/tv_weather_name"

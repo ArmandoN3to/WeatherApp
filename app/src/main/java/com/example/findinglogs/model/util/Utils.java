@@ -53,4 +53,8 @@ public class Utils {
         String celsius = fmt.format(convertToCelsius);
         return celsius + "ºC";
     }
+
+    public static String getPressure(float pressure) {
+        return pressure + " hPa";
+    }
 }
