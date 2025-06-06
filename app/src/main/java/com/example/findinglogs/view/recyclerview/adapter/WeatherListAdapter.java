@@ -87,14 +87,16 @@ public class WeatherListAdapter extends RecyclerView.Adapter<WeatherListAdapter.
             }
 
             name.setText(weather.getName());
-            String temp_current_value = "Temp. atual: " + Utils.getCelsiusTemperatureFromKevin(weather.getMain().getTemp());
+            String temp_current_value = "Temp. atual: " +
+                    Utils.getCelsiusTemperatureFromKevin(weather.getMain().getTemp());
             temp_current.setText(temp_current_value);
-            String temp_max_value = "Temp. máx: " + Utils.getCelsiusTemperatureFromKevin(weather.getMain().getTemp_max());
+            String temp_max_value = "Temp. máx: " +
+                    Utils.getCelsiusTemperatureFromKevin(weather.getMain().getTemp_max());
             temp_max.setText(temp_max_value);
-            String temp_min_value = "Temp. mín: " + Utils.getCelsiusTemperatureFromKevin(weather.getMain().getTemp_min());
+            String temp_min_value = "Temp. mín: " +
+                    Utils.getCelsiusTemperatureFromKevin(weather.getMain().getTemp_min());
             temp_min.setText(temp_min_value);
-            String pressure_value = "Pressão: " + Utils.getPressure(weather.getMain().getPressure());
-//                    1008.2 + "hPa";
+            String pressure_value = "Pressão: " + 1008.2 + "hPa";
             pressure.setText(pressure_value);
             String humidity_value = "Umidade: " + weather.getMain().getHumidity() + "%";
             humidity.setText(humidity_value);
